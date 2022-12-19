@@ -12,7 +12,7 @@ function App() {
   const getData = async (tags) => {
     try {
       setLoading(true);
-      const { data } = await axios.get(`http://localhost:3000?tags=${tags}`);
+      const { data } = await axios.get(`http://128.199.198.77:3000?tags=${tags}`);
       setDataList(data?.data?.feed?.entry);
       setLoading(false);
     } catch (error) {
